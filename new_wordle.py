@@ -24,29 +24,29 @@ pygame.display.set_caption('WORDLE!')
 
 # images
 box_img = pygame.image.load(os.path.join(
-    "assets2", "tiles.png")).convert()
+    "assets", "tiles.png")).convert()
 box_img = pygame.transform.scale(box_img, (353, 482))
 box_rect = box_img.get_rect(center=(WIDTH/2, HEIGHT/3+30))
 
-coin_img = pygame.image.load(os.path.join("assets2", "coin.png")).convert()
+coin_img = pygame.image.load(os.path.join("assets", "coin.png")).convert()
 coin_img = pygame.transform.scale(coin_img, (40, 40))
 coin_img.set_colorkey("black")
 coin_rect = coin_img.get_rect(topleft=(0, 0))
 
 shop_img = pygame.image.load(os.path.join(
-    "assets2", "lightbulb.png")).convert()
+    "assets", "lightbulb.png")).convert()
 shop_img = pygame.transform.scale(shop_img, (70, 70))
 shop_rect = shop_img.get_rect(topleft=(WIDTH-70, 0))
 
-info_img = pygame.image.load(os.path.join("assets2", "info.png")).convert()
+info_img = pygame.image.load(os.path.join("assets", "info.png")).convert()
 info_img = pygame.transform.scale(info_img, (2035/4, 2461/4))
 
-help_img = pygame.image.load(os.path.join("assets2", "help.png"))
+help_img = pygame.image.load(os.path.join("assets", "help.png"))
 help_img = pygame.transform.scale(help_img, (30, 30))
 help_rect = help_img.get_rect(topleft=(WIDTH-110, 0))
 
 # sound
-pygame.mixer.music.load(os.path.join("assets2", "think.wav"))
+pygame.mixer.music.load(os.path.join("assets", "think.wav"))
 pygame.mixer.music.set_volume(1)
 pygame.mixer.music.play(-1)
 
@@ -65,8 +65,8 @@ for temp in ALPHABET:
 
 
 # fonts
-GUESSED_LETTER_FONT = pygame.font.Font("assets2/FreeSansBold.otf", 41)
-KEY_LETTER_FONT = pygame.font.Font("assets2/FreeSansBold.otf", 20)
+GUESSED_LETTER_FONT = pygame.font.Font("assets/FreeSansBold.otf", 41)
+KEY_LETTER_FONT = pygame.font.Font("assets/FreeSansBold.otf", 20)
 font_name = pygame.font.match_font('Times New Roman')
 
 # letter spacing
