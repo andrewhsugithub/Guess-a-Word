@@ -1,4 +1,4 @@
-﻿# Wordle Clone
+﻿# Guess a Word
 
 ![alt text](https://github.com/andrewhsugithub/wordle-clone/blob/master/assets/gameplay.png)
 
